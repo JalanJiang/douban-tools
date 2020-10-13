@@ -16,6 +16,10 @@
   color: #aaa;
 }
 
+.tool-grid {
+  margin-top: 150px;
+}
+
 .usermotto {
   margin-top: 200px;
 }
