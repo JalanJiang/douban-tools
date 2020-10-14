@@ -9,7 +9,8 @@
     </block>
   </view>
   <!-- 底部 -->
-  <!-- <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view> -->
+  <view class="usermotto">
+    <van-button plain type="primary" size="normal" bindtap="bindViewTap">奇幻之旅</van-button>
+    <!-- <text class="user-motto">{{motto}}</text> -->
+  </view>
 </view>
