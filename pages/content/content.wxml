@@ -1,0 +1,18 @@
+<view>
+  <!-- 标题 -->
+  <van-row>
+    <van-col class="content-title" offset="1">大标题</van-col>
+  </van-row>
+  <!-- 日期 -->
+  <van-row>
+    <van-col class="content-date" offset="1">2020-10-14 17:27</van-col>
+  </van-row>
+  <!-- 内容 -->
+  <van-row>
+    <van-col class="content-main" offset="1">
+      今天让小二和老大接触了一下，结果就一直在你追我赶，也打架，不过没到咬一地毛的程度，也没有相互哈气。打完架以后就把小二抱回隔离房了，就一直在陪老大，但是老大自从打完架以后就一直在舔毛。。
+
+求问，这正常么，很担心
+    </van-col>
+  </van-row>
+</view>

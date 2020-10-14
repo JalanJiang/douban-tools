@@ -1,0 +1,14 @@
+<view class="group-list">
+  <van-cell-group>
+    <van-cell 
+      is-link 
+      title="小组名称" 
+      value="" 
+      label="搜索关键字" 
+      border="{{ false }}" 
+      link-type="navigateTo"
+      url="/pages/topics/topics"
+    />
+    <van-cell title="爱猫生活" is-link value="" label="开车 Go" border="{{ false }}" />
+  </van-cell-group>
+</view>

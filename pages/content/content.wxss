@@ -1,0 +1,8 @@
+.content-date {
+  color: #aaa;
+  font-size: 10px;
+}
+
+.content-main {
+  font-size: 12px;
+}

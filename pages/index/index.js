@@ -15,6 +15,12 @@ Page({
       url: '../logs/logs'
     })
   },
+  // 跳转列表页
+  bindGroupViewTap: function() {
+    wx.navigateTo({
+      url: '../groups/groups',
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
