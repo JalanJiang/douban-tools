@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/groups/groups",
     "pages/topics/topics",
-    "pages/content/content"
+    "pages/content/content",
+    "pages/subscriptions/subscriptions"
   ],
   "window":{
     "backgroundTextStyle":"light",

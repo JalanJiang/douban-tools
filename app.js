@@ -1,5 +1,17 @@
 //app.js
 App({
+  // 全局常量
+  globalData: {
+    // 用户信息
+    userInfo: null,
+    // URL 前缀
+    baseUrl: "http://127.0.0.1:8000",
+    // 用户登录 token
+    token: null,
+    defaultPage: 1,
+    defaultPageSize: 20,
+  },
+  // 开启
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -10,6 +22,12 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        console.log(res.code)
+        // TODO 过期时间校验
+        // if (!wx.getStorageSync('token')) {
+        //   this.getToken(res.code)
+        // }
+        this.getToken(res.code)
       }
     })
     // 获取用户信息
@@ -33,7 +51,20 @@ App({
       }
     })
   },
-  globalData: {
-    userInfo: null
+  // 请求 Token
+  getToken: function (code) {
+    wx.request({
+      url: this.globalData.baseUrl + '/users/login',
+      data: {
+        'wx_code': code
+      },
+      method: 'POST',
+      success (res) {
+        // 获取返回的 token 值
+        // TODO: 错误处理
+        wx.setStorageSync('token', res.data.token)
+        console.log(res.data.token)
+      }
+    })
   }
 })

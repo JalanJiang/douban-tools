@@ -2,5 +2,7 @@
   "usingComponents": {
     "van-row": "@vant/weapp/row/index",
     "van-col": "@vant/weapp/col/index"
-  }
+  },
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle": "dark"
 }
