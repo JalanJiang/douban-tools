@@ -1,9 +1,15 @@
-<view class="topic-list">
-  <!-- TODO: 是否新消息的标记 -->
-  <van-cell 
-    title="【开车】狗东欣橙店go九种肉450+" 
-    is-link 
-    label="如题，前几天开过的一次车。满减满600－60……" 
-    url="/pages/content/content"
-  />
+<view wx:if="{{total == 0}}">
+  <van-empty description="空无一物" />
+</view>
+<view wx:else="{{total > 0}}">
+  <view class="topic-list">
+    <!-- TODO: 是否新消息的标记 -->
+    <van-cell 
+      wx:for="{{topicList}}"
+      wx:key="id"
+      title="{{item.title}}" 
+      label="{{item.update_time}}" 
+      url="/pages/content/content?topic_id={{item.id}}"
+    />
+  </view>
 </view>
