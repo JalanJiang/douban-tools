@@ -18,7 +18,7 @@ Page({
   // 跳转列表页
   bindGroupViewTap: function() {
     wx.navigateTo({
-      url: '../groups/groups',
+      url: '../subscriptions/subscriptions',
     })
   },
   onLoad: function () {
@@ -50,7 +50,6 @@ Page({
     }
   },
   getUserInfo: function(e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
