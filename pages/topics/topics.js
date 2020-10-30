@@ -2,7 +2,7 @@ const app = getApp()
 
 Page({
   data: {
-    total: 0,
+    total: -1,
     topicList: [],
   },
   onLoad: function (query) {
