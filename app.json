@@ -5,7 +5,8 @@
     "pages/groups/groups",
     "pages/topics/topics",
     "pages/content/content",
-    "pages/subscriptions/subscriptions"
+    "pages/subscriptions/subscriptions",
+    "pages/profile/profile"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -13,5 +14,25 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
+  "usingComponents": {
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [{
+      "pagePath": "pages/subscriptions/subscriptions",
+      "text": "订阅列表",
+      "iconPath": "",
+      "selectedIconPath": ""
+    },
+    {
+      "pagePath": "pages/profile/profile",
+      "text": "关于我",
+      "iconPath": "",
+      "selectedIconPath": ""
+    }
+  ]},
   "sitemapLocation": "sitemap.json"
 }

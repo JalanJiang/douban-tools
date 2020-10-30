@@ -18,3 +18,6 @@
     </van-cell-group>
   </view>
 </vew>
+
+<!-- 底部 tab -->
+<!-- <custom-tab-bar></custom-tab-bar> -->

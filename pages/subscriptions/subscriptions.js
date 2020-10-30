@@ -2,12 +2,19 @@ const app = getApp()
 
 Page({
   data: {
-    total: 0,
+    total: -1,
     subscriptionList: [],
   },
   onLoad: function () {
     this.fetchSubscriptions()
     console.log(this.subscriptionList)
+  },
+  onShow: function () {
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+      this.getTabBar().setData({
+        active: 0
+      })
+    }
   },
   onPullDownRefresh: function () {
     console.log("pullDownRefresh")
@@ -29,3 +36,4 @@ Page({
     })
   }
 })
+
