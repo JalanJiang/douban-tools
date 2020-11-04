@@ -1,0 +1,26 @@
+<view class="add">
+  <form bindsubmit="formSubmit">
+    <van-cell-group>
+      <van-field
+        name="groupID"
+        label="小组 ID"
+        value="{{ groupID }}"
+        readonly
+      />
+      <van-field
+        name="groupName"
+        label="小组名称"
+        value="{{ groupName }}"
+        readonly
+      />
+      <van-field 
+        name="keyword"
+        required
+        label="订阅关键词"
+        value="{{ keyword }}"
+      />
+    </van-cell-group>
+    <!-- <van-button class="container" plain type="primary" size="large" form-type="submit">添加订阅</van-button> -->
+    <button formType="submit">添加订阅</button>
+  </form>
+</view>

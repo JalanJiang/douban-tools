@@ -4,6 +4,7 @@ Page({
   data: {
     total: -1,
     topicList: [],
+    container: null,
   },
   onLoad: function (query) {
     console.log(query.subscription_id)
@@ -11,6 +12,11 @@ Page({
   },
   onPullDownRefresh: function() {
 
+  },
+  onReady() {
+    this.setData({
+      container: () => wx.createSelectorQuery().select('#container'),
+    });
   },
   featchTopics: function (subscriptionID, page = app.globalData.defaultPage, pageSize = app.globalData.defaultPageSize) {
     wx.request({

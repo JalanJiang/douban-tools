@@ -17,7 +17,7 @@ Page({
   },
   // 跳转列表页
   bindGroupViewTap: function() {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '../subscriptions/subscriptions',
     })
   },

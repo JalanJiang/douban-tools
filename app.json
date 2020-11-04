@@ -6,6 +6,8 @@
     "pages/topics/topics",
     "pages/content/content",
     "pages/subscriptions/subscriptions",
+    "pages/subscriptions/search/search",
+    "pages/subscriptions/add/add",
     "pages/profile/profile"
   ],
   "window":{

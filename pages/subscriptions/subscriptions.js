@@ -34,6 +34,13 @@ Page({
         });
       }
     })
+  },
+  // 跳转到添加页面
+  bindAddTap: function () {
+    // console.log("add tap")
+    wx.navigateTo({
+      url: '/pages/subscriptions/search/search',
+    })
   }
 })
 

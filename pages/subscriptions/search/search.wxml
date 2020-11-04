@@ -1,0 +1,20 @@
+<view class="search">
+  <van-search
+    value="{{inputValue}}"
+    placeholder="请输入小组名称"
+    show-action
+    bind:search="onSearch"
+    bind:cancel="onCancel"
+    bind:change="onChange"
+  />
+</view>
+<view class="search-result-list">
+  <van-cell 
+    wx:for="{{groupList}}" 
+    wx:key="id" 
+    title="组名：{{item.name}}" 
+    label="简介：{{item.desc_abstract}}"
+    link-type="navigateTo"
+    url="/pages/subscriptions/add/add?group_id={{ item.id }}&group_name={{ item.name }}"
+  />
+</view>
